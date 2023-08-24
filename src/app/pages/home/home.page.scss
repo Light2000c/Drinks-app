@@ -1,0 +1,95 @@
+ion-content{
+
+.divider-text{
+
+    ion-text{
+        font-size: 18px;
+    }
+}
+
+.categories-img{
+    ion-card-content{
+        padding: 7px 4px;
+        display: flex;
+        justify-content: center;
+    }
+    ion-img{
+       width: 60px;
+       height: 60px;
+    }
+}
+
+
+.category-card{
+   padding: 10px 9px;
+}
+
+//color divider
+.divider-container{
+    margin-top: 30px;
+}
+
+.cd-container{
+  width: 100%; 
+  display: flex; 
+  justify-content: space-between;
+}
+
+.cd-1{
+    ion-text{
+        font-size: 18px;  
+    }
+}
+
+.cd-2{
+    ion-text{
+        font-size: 18px;  
+    }
+}
+//color divider
+
+
+
+// most popular
+.most-popular{
+    swiper-slide{
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+}
+
+.popular-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    ion-text{
+        font-size: 18px;
+    }
+    ion-icon{
+        font-size: 20px;
+        color: gold;
+    }
+}
+
+.popular-icon-col{
+    display: flex;
+    justify-content: end;
+}
+
+.popular-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    ion-icon{
+        font-size: 25px;
+    }
+}
+// most popular
+
+
+
+}

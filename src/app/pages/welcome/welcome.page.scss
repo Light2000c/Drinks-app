@@ -1,0 +1,41 @@
+ion-content{
+    .welcome{
+        height: 100%;
+    }
+
+    .welcome-img{
+        height: 55%;
+        background-image: url("/assets/images/wine-intro.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        resize: both;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .welcome-itm{
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .welcome-img-inner{
+        // width: 300px;
+        // height: 200px;
+    }
+
+    .welcome-text h4{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+
+    }
+    .welcome-text h6{
+        text-align: center;
+        font-size: 20px;
+    }
+}

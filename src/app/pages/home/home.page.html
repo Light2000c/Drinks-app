@@ -1,0 +1,104 @@
+<app-header> </app-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Beginning of swiper -->
+  <swiper-container [slidesPerView]="1.2" [pagination]="true">
+    <swiper-slide class="ion-margin-bottom">
+      <div>
+        <ion-card>
+          <ion-card-content class="ion-no-padding">
+            <ion-img src="assets/images/banner3.jpeg"></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </swiper-slide>
+    <swiper-slide class="ion-margin-bottom">
+      <div>
+        <ion-card>
+          <ion-card-content class="ion-no-padding">
+            <ion-img src="assets/images/banner4.jpeg"></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </swiper-slide>
+    <swiper-slide class="ion-margin-bottom">
+      <div>
+        <ion-card>
+          <ion-card-content class="ion-no-padding">
+            <ion-img src="assets/images/banner5.png"></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  <!-- End of swiper -->
+
+  <!-- divider text -->
+  <div
+    class="ion-margin-vertical ion-margin-end"
+    style="display: flex; justify-content: space-between; margin-top: 30px"
+  >
+    <div class="divider-text">
+      <ion-text class="ion-margin-start">Categories</ion-text>
+    </div>
+  </div>
+  <!-- divider text -->
+
+  <!-- Beginning of Category -->
+  <div class="most-popular">
+    <swiper-container slides-per-view="auto">
+      <swiper-slide *ngFor="let category of categories">
+        <ion-card class="category-card">
+          <ion-card-content class="ion-no-padding"
+            ><ion-text class="ion-text-center ion-margin category-txt"
+              >{{ category.name }}</ion-text
+            ></ion-card-content
+          >
+        </ion-card>
+      </swiper-slide>
+      </swiper-container>
+  </div>
+  <!-- End of Category -->
+
+  <!-- Beginning of Flash Sales -->
+    <ion-item-divider color="mainyellow" class="ion-margin-vertical ion-no-padding ion-padding-vertical color-divider">
+      <div class="cd-container">
+        <div class="cd-1">
+        <ion-text class="ion-margin-start"><ion-icon name="pricetags-outline"></ion-icon> Flash Sales</ion-text>
+      </div>
+      <div class="cd-2">
+        <ion-text class="ion-margin-start">See All</ion-text>
+      </div>
+      </div>
+    </ion-item-divider>
+
+
+    <div>
+      <swiper-container slides-per-view="1.7">
+        <swiper-slide *ngFor="let product of products2">
+            <app-product-card [product]="product"></app-product-card>
+        </swiper-slide>
+        </swiper-container>
+    </div>
+  <!-- End of Flash Sales -->
+
+  <!-- Beginning of product -->
+  <div
+    class="ion-margin-vertical ion-margin-end"
+    style="display: flex; justify-content: space-between; margin-top: 30px"
+  >
+    <div class="divider-text">
+      <ion-text class="ion-margin-start">Hot Deals</ion-text>
+    </div>
+    <div class="divider-text">
+      <ion-text class="ion-margin-start">See All</ion-text>
+    </div>
+  </div>
+
+  <ion-row>
+    <ion-col *ngFor="let product of products2" size="6">
+      <app-product-card [product]="product"></app-product-card>
+    </ion-col>
+  </ion-row>
+  <!-- End of product -->
+</ion-content>

@@ -1,0 +1,24 @@
+
+<div class="product">
+  <ion-card>
+   <ion-card-content>
+     <div class="product-icon">
+       <ion-icon name="heart-outline"></ion-icon>
+     </div>
+     <div class="product-img">
+       <ion-img src="assets/images/{{ product.image }}"></ion-img>
+     </div>
+     <div class="product-title">
+      <ion-label class="ion-text-nowrap">
+        <h5>{{ product.name}}</h5>
+        <hr class="horizontal">
+        <h6><ion-icon style="color: gold;" name="star-sharp"></ion-icon> 4.5</h6>
+        <h6>₦{{ product.price }}</h6>
+      </ion-label>
+     </div>
+    <div class="product-button" *ngIf="showButton()">
+      <ion-button class="ion-text-capitalize ion-margin-top" expand="block" color="mainyellow" size="small">Add to Cart</ion-button>
+    </div>
+   </ion-card-content>
+  </ion-card>
+ </div>

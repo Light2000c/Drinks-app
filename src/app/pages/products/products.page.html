@@ -1,0 +1,99 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+<div>
+    <div>
+        <ion-icon class="" name="options-outline" size="large"></ion-icon>
+    </div>
+</div>
+
+  <!-- Beginning of First Section -->
+  <div>
+    <swiper-container slides-per-view="1.9">
+      <swiper-slide *ngFor="let product of products">
+          <app-product-card [product]="product"></app-product-card>
+      </swiper-slide>
+      </swiper-container>
+  </div>
+  <!-- End of First Section -->
+
+    <!-- Beginning of *********** -->
+    <ion-item-divider color="mainyellow" class="ion-margin-vertical ion-no-padding ion-padding-vertical color-divider">
+      <div class="cd-container">
+        <div class="cd-1">
+        <ion-text class="ion-margin-start">Categories</ion-text>
+      </div>
+      <div class="cd-2">
+        <ion-text class="ion-margin-start">See All</ion-text>
+      </div>
+      </div>
+    </ion-item-divider>
+  
+  
+    <div>
+      <ion-row>
+        <ion-col size="4">
+          <ion-card>
+            <ion-card-content>
+              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="4">
+          <ion-card>
+            <ion-card-content>
+              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="4">
+          <ion-card>
+            <ion-card-content>
+              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="4">
+          <ion-card>
+            <ion-card-content>
+              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="4">
+          <ion-card>
+            <ion-card-content>
+              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  <!-- End of ***********  -->
+
+  <!-- Beginning of Flash Sales -->
+  <ion-item-divider color="mainyellow" class="ion-margin-vertical ion-no-padding ion-padding-vertical color-divider">
+    <div class="cd-container">
+      <div class="cd-1">
+      <ion-text class="ion-margin-start"><ion-icon name="pricetags-outline"></ion-icon> Flash Sales</ion-text>
+    </div>
+    <div class="cd-2">
+      <ion-text class="ion-margin-start">See All</ion-text>
+    </div>
+    </div>
+  </ion-item-divider>
+
+
+  <div>
+    <swiper-container slides-per-view="1.9">
+      <swiper-slide *ngFor="let product of products2">
+          <app-product-card [product]="product"></app-product-card>
+      </swiper-slide>
+      </swiper-container>
+  </div>
+<!-- End of Flash Sales -->
+</ion-content>

@@ -1,0 +1,58 @@
+<ion-content [fullscreen]="true">
+<div class="top-background">
+  <div class="ion-margin-horizontal top-text">
+<h4>Register</h4>
+<h5>Create your account</h5>
+</div>
+</div>
+
+<div class="form-items">
+<div class="register-form ion-margin-vertical">
+  <div class="ion-margin">
+    <div class="ion-margin-vertical">
+      <ion-input  type="text" label="Full Name" label-placement="floating" fill="outline">
+      </ion-input>
+    </div>
+
+    <div class="ion-margin-vertical">
+      <ion-input type="email" label="Email" label-placement="floating" fill="outline">
+      </ion-input>
+    </div>
+ 
+    <div class="ion-margin-vertical">
+      <ion-input type="password" label="Password" label-placement="floating" fill="outline">
+      </ion-input>
+    </div>
+      
+  </div>
+
+
+   <div class="ion-margin submit-button">
+    <app-submit-button
+    text="Register"
+    color="mainyellow"
+    expand="block"
+    size="large"
+    ></app-submit-button>
+   </div>
+
+   <div class="ion-margin divider">
+   <hr>
+  </div>
+
+  <div class="ion-margin google-button">
+    <ion-button class="ion-text-capitalize" color="mainyellow" expand="block" size="large" fill="outline"><ion-icon slot="start" name="logo-google"></ion-icon>
+      Sign Up with Google
+    </ion-button>
+  </div>
+</div>
+
+<div>
+  <div>
+    <h5 style="text-align: center; margin-bottom: 20px;">
+      <ion-text >Don't Have An Account? <a style="text-decoration: none; color: #fad933;" href="">Login</a></ion-text>
+    </h5>
+   </div>
+</div>
+</div>
+</ion-content>

@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "668384006435",
+    "project_id": "ionicfirebase-31bd2",
+    "storage_bucket": "ionicfirebase-31bd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668384006435:android:226f076f96a2708bc27c96",
+        "android_client_info": {
+          "package_name": "com.clubkonnect.mobile1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668384006435-3janqi40egkhj6drvh4f5r5n63a6ub8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfTCMgHVl3NlYoaogMH0IjUETszhspnR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668384006435-3janqi40egkhj6drvh4f5r5n63a6ub8a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "668384006435-e79mpg2lqk5bag6a3j068kpgbuhj9eb4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.clinton.mobile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668384006435:android:64e0ff0d90d49a3dc27c96",
+        "android_client_info": {
+          "package_name": "com.drinks.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668384006435-3janqi40egkhj6drvh4f5r5n63a6ub8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfTCMgHVl3NlYoaogMH0IjUETszhspnR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668384006435-3janqi40egkhj6drvh4f5r5n63a6ub8a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "668384006435-e79mpg2lqk5bag6a3j068kpgbuhj9eb4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.clinton.mobile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668384006435:android:aa3af19fcecb4a98c27c96",
+        "android_client_info": {
+          "package_name": "com.pdfdownloader.pushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668384006435-3janqi40egkhj6drvh4f5r5n63a6ub8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfTCMgHVl3NlYoaogMH0IjUETszhspnR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668384006435-3janqi40egkhj6drvh4f5r5n63a6ub8a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "668384006435-e79mpg2lqk5bag6a3j068kpgbuhj9eb4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.clinton.mobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
