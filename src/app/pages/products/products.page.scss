@@ -22,3 +22,47 @@
     }
 }
 //color divider
+
+
+//categories
+.category-card{
+   height: 100px;
+}
+
+.category-img{
+    width: auto;
+    height: 40px;
+}
+//categories
+
+
+//Filter
+.filter-category{
+    ion-select{
+        transform: scaleY(0.8);
+    }
+}
+
+.filter-tag{
+    ion-select{
+        transform: scaleY(0.8);
+    }
+}
+
+.filter-price{
+    ion-input{
+        transform: scaleY(0.8);
+    }
+}
+
+.horizontal-line-wrapper{
+ display: flex;
+ justify-content: center;
+}
+
+.horizontal-line{
+    width: 20px;
+    border: 1px solid black;
+    margin-top: 25px;
+}
+//Filter

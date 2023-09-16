@@ -1,0 +1,99 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button color="mainyellow" size="large" mode="ios" defaultHref="/tabs/products"></ion-back-button>
+    </ion-buttons>
+    <ion-icon class="ion-margin-horizontal" color="mainyellow" size="large" name="cart-sharp" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <div class="img-wrapper">
+  <div class="detail-img">
+    <ion-img src="assets/images/Jameson Black Barrel 70cl.jpeg"></ion-img>
+  </div>
+ </div>
+
+ <ion-row class="ion-margin" style="margin-top: 30px;">
+  <ion-col size="8">
+    <div class="detail-title">
+      <ion-text>Jameson Black Barrel 70cl</ion-text>
+    </div>
+  </ion-col>
+  <ion-col size="4">
+    <div class="detail-price">
+      <ion-text>₦3,500</ion-text>
+    </div>
+  </ion-col>
+ </ion-row>
+
+ <div class="ion-margin">
+  <div style="margin-top: 40px;">
+    <ion-segment  mode="ios" [value]="0" [(ngModel)]="slide" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="default" [value]="0">
+        <ion-label>Description</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="segment" [value]="1">
+        <ion-label>Quality</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div>
+    <swiper-container #swiper>
+      <swiper-slide>
+        <div class="detail-description">
+        <p>Description</p>
+        <div>
+          <ion-text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, pariatur tempora cum. Cum, repudiandae! Quae adipisci delectus numquam, voluptatum, magnam cupiditate velit, dolores maxime saepe libero repellendus.
+          </ion-text>
+        </div>
+      </div>
+      </swiper-slide>
+      <swiper-slide>
+     <div class="detail-quality">
+      <p>Quality</p>
+
+      <ion-list>
+        <ion-item class="ion-no-padding ion-margin-bottom">
+          <ion-text>Brand: Beer</ion-text>
+        </ion-item>
+        <ion-item class="ion-no-padding ion-margin-bottom">
+          <ion-text>Color: red, black</ion-text>
+        </ion-item>
+        <ion-item class="ion-no-padding ion-margin-bottom">
+          <ion-text>Type: , 50cl, 75cl</ion-text>
+        </ion-item>
+      </ion-list>
+     </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+ </div>
+</ion-content>
+
+<ion-footer class="detail-footer">
+  <!-- <ion-button class="ion-margin" color="mainyellow" size="large" expand="block"><ion-icon slot="start" name="cart-outline"></ion-icon> Add To Cart</ion-button> -->
+  <ion-row class="ion-margin">
+    <ion-col size="2">
+      <ion-button color="mainyellow" size="large" expand="block"><ion-icon name="add-outline"></ion-icon></ion-button>
+    </ion-col>
+    <ion-col size="2" class="ion-align-self-center">
+      <ion-input color="mainyellow"
+      type="number"
+      value="0"
+      fill="outline"
+    >
+    </ion-input>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button size="large" color="mainyellow" expand="block"><ion-icon name="remove-outline"></ion-icon></ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button size="large" color="mainyellow" expand="block"><ion-icon slot="start" name="cart-outline"></ion-icon> Remove</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>
+
+

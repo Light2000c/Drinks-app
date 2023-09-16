@@ -18,6 +18,14 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./pages/auth/register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'product-details',
+    loadChildren: () => import('./pages/product-details/product-details.module').then( m => m.ProductDetailsPageModule)
+  },
+  {
+    path: 'carts',
+    loadChildren: () => import('./pages/carts/carts.module').then( m => m.CartsPageModule)
+  },
 ];
 @NgModule({
   imports: [

@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { IonicSlides } from '@ionic/angular';
+import { CupertinoPane } from 'cupertino-pane';
+import { UtilitiesProvider } from 'src/app/provider/utilities/utilities';
 
 import { register } from 'swiper/element/bundle';
 
@@ -11,6 +13,7 @@ register();
   styleUrls: ['./products.page.scss'],
 })
 export class ProductsPage implements OnInit {
+
 
   public products: any = [
     {name: "Martini Prosecco 75cl", price: "5,950", image: "Martini Prosecco 75cl.jpeg"},
@@ -28,11 +31,33 @@ export class ProductsPage implements OnInit {
     {name: "1 B&G White Wine 75cl", price: "3,500", image: "B&G White Wine 75cl.jpeg"},
   ];
 
+  public pane!: CupertinoPane;
+  
+
   swiperModules = [IonicSlides];
 
-  constructor() { }
+  constructor(
+    public utilities: UtilitiesProvider,
+    public zone: NgZone,
+  ) { }
 
   ngOnInit() {
+    this.pane = this.utilities.createPane("#pane-content", {
+			fitHeight: true,
+			events: {
+				onDidDismiss: () => {
+					this.zone.run(() => {
+					});
+				},
+			},
+		});
   }
+
+  public showPane(){
+    this.pane.present({animate: true});
+    this.pane.calcFitHeight();
+		this.pane.disableDrag();
+  }
+
 
 }

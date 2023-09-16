@@ -1,99 +1,222 @@
 <app-header></app-header>
 
 <ion-content [fullscreen]="true">
-<div>
+  <div>
     <div>
-        <ion-icon class="" name="options-outline" size="large"></ion-icon>
+      <ion-icon
+        (click)="showPane()"
+        class=""
+        name="options-outline"
+        size="large"
+      ></ion-icon>
     </div>
-</div>
+  </div>
 
   <!-- Beginning of First Section -->
   <div>
     <swiper-container slides-per-view="1.9">
       <swiper-slide *ngFor="let product of products">
-          <app-product-card [product]="product"></app-product-card>
+        <app-product-card [product]="product"></app-product-card>
       </swiper-slide>
-      </swiper-container>
+    </swiper-container>
   </div>
   <!-- End of First Section -->
 
-    <!-- Beginning of *********** -->
-    <ion-item-divider color="mainyellow" class="ion-margin-vertical ion-no-padding ion-padding-vertical color-divider">
-      <div class="cd-container">
-        <div class="cd-1">
+  <!-- Beginning of *********** -->
+  <ion-item-divider
+    color="mainyellow"
+    class="ion-margin-vertical ion-no-padding ion-padding-vertical color-divider"
+  >
+    <div class="cd-container">
+      <div class="cd-1">
         <ion-text class="ion-margin-start">Categories</ion-text>
       </div>
       <div class="cd-2">
         <ion-text class="ion-margin-start">See All</ion-text>
       </div>
-      </div>
-    </ion-item-divider>
-  
-  
-    <div>
-      <ion-row>
-        <ion-col size="4">
-          <ion-card>
-            <ion-card-content>
-              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-
-        <ion-col size="4">
-          <ion-card>
-            <ion-card-content>
-              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-
-        <ion-col size="4">
-          <ion-card>
-            <ion-card-content>
-              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-
-        <ion-col size="4">
-          <ion-card>
-            <ion-card-content>
-              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-
-        <ion-col size="4">
-          <ion-card>
-            <ion-card-content>
-              <ion-img src="assets/images/Martini Prosecco 75cl.jpeg"></ion-img>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </div>
-  <!-- End of ***********  -->
-
-  <!-- Beginning of Flash Sales -->
-  <ion-item-divider color="mainyellow" class="ion-margin-vertical ion-no-padding ion-padding-vertical color-divider">
-    <div class="cd-container">
-      <div class="cd-1">
-      <ion-text class="ion-margin-start"><ion-icon name="pricetags-outline"></ion-icon> Flash Sales</ion-text>
-    </div>
-    <div class="cd-2">
-      <ion-text class="ion-margin-start">See All</ion-text>
-    </div>
     </div>
   </ion-item-divider>
 
+  <div>
+    <ion-row>
+      <ion-col size="4">
+        <ion-card class="category-card">
+          <ion-card-content>
+            <ion-img
+              class="category-img"
+              src="assets/images/Martini Prosecco 75cl.jpeg"
+            ></ion-img>
+            <div class="ion-text-center">
+              <ion-text>Wines</ion-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-card class="category-card">
+          <ion-card-content>
+            <ion-img
+              class="category-img"
+              src="assets/images/juice1.jpeg"
+            ></ion-img>
+            <div class="ion-text-center">
+              <ion-text>Juice</ion-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-card class="category-card">
+          <ion-card-content>
+            <ion-img
+              class="category-img"
+              src="assets/images/starcan.png"
+            ></ion-img>
+            <div class="ion-text-center">
+              <ion-text>Beer</ion-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-card class="category-card">
+          <ion-card-content>
+            <ion-img
+              class="category-img"
+              src="assets/images/magic-moment.jpeg"
+            ></ion-img>
+            <div class="ion-text-center">
+              <ion-text>Alcoholic Wine</ion-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-card class="category-card">
+          <ion-card-content>
+            <ion-img
+              class="category-img"
+              src="assets/images/Martini Prosecco 75cl.jpeg"
+            ></ion-img>
+            <div class="ion-text-center">
+              <ion-text>Soft Drinks</ion-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+  <!-- End of ***********  -->
+
+  <!-- Beginning of Flash Sales -->
+  <ion-item-divider
+    color="mainyellow"
+    class="ion-margin-vertical ion-no-padding ion-padding-vertical color-divider"
+  >
+    <div class="cd-container">
+      <div class="cd-1">
+        <ion-text class="ion-margin-start"
+          ><ion-icon name="pricetags-outline"></ion-icon> Flash Sales</ion-text
+        >
+      </div>
+      <div class="cd-2">
+        <ion-text class="ion-margin-start">See All</ion-text>
+      </div>
+    </div>
+  </ion-item-divider>
 
   <div>
     <swiper-container slides-per-view="1.9">
       <swiper-slide *ngFor="let product of products2">
-          <app-product-card [product]="product"></app-product-card>
+        <app-product-card [product]="product"></app-product-card>
       </swiper-slide>
-      </swiper-container>
+    </swiper-container>
   </div>
-<!-- End of Flash Sales -->
+  <!-- End of Flash Sales -->
+
+  <!-- Beginning of popular  -->
+  <ion-item-divider
+    color="mainyellow"
+    class="ion-margin-vertical ion-no-padding ion-padding-vertical color-divider"
+  >
+    <div class="cd-container">
+      <div class="cd-1">
+        <ion-text class="ion-margin-start"> Featured</ion-text>
+      </div>
+      <div class="cd-2">
+        <ion-text class="ion-margin-start">See All</ion-text>
+      </div>
+    </div>
+  </ion-item-divider>
+
+  <ion-row>
+    <ion-col *ngFor="let product of products2" size="6">
+      <app-product-card [product]="product"></app-product-card>
+    </ion-col>
+  </ion-row>
+  <!-- End of popular -->
+
+  <!-- pane contents -->
+  <div id="pane-content">
+    <div class="filter-category">
+      <p class="ion-margin-start">Category</p>
+      <div class="ion-margin">
+        <ion-select fill="outline" placeholder="Select a Category">
+          <ion-select-option selected>Beers</ion-select-option>
+          <ion-select-option selected>Juice</ion-select-option>
+          <ion-select-option selected>Wine</ion-select-option>
+          <ion-select-option selected>Alcoholic Wines</ion-select-option>
+        </ion-select>
+      </div>
+    </div>
+    <div class="filter-tag">
+      <p class="ion-margin-start">Tags</p>
+      <div class="ion-margin">
+        <ion-select fill="outline" placeholder="Select a Category">
+          <ion-select-option selected>New Arrival</ion-select-option>
+          <ion-select-option selected>Most Popular</ion-select-option>
+          <ion-select-option selected>Recently Added</ion-select-option>
+        </ion-select>
+      </div>
+    </div>
+    <div class="filter-price ion-margin">
+      <p class="">Price</p>
+      <ion-row>
+        <ion-col size="5">
+          <ion-input
+            type="email"
+            value=" ₦00"
+            fill="outline"
+          >
+          </ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <div class="horizontal-line-wrapper">
+          <hr class="horizontal-line">
+        </div>
+        </ion-col>
+        <ion-col size="5">
+          <ion-input
+            type="email"
+            value=" ₦00"
+            fill="outline"
+          >
+          </ion-input>
+        </ion-col>
+      </ion-row>
+
+      <div class="ion-margin">
+        <ion-range aria-label="Dual Knobs Range" [dualKnobs]="true" [value]="{ lower: 20, upper: 80 }"></ion-range>
+      </div>
+
+      <div>
+        <ion-button class="" color="mainyellow" size="" expand="block">Apply Filters</ion-button>
+      </div>
+    </div>
+  </div>
+  <!-- pane contents -->
 </ion-content>
